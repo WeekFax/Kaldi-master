@@ -141,9 +141,9 @@ def getEmbedings(file_path):
 
 
 if __name__ == '__main__':
-    generateMFCCs(MFCC_dir="MFCCs", config=config, regen=True,
+    generateMFCCs(MFCC_dir="MFCCs", config_name="vbdiar.yml", regen=True,
                   vad_dir="vad", wav_dir="wav", max_size=3000, tolerance=0)
-    generateEmbeddings(MFCC_dir="MFCCs", config=config, embendding_dir="embs")
+    generateEmbeddings(MFCC_dir="MFCCs", config_name="vbdiar.yml", embendding_dir="embs")
 
 
 
